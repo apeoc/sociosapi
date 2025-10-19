@@ -1,141 +1,157 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# Sistema APEOC - Gestão de Membros e Processos
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+Sistema completo de gestão para a Associação dos Profissionais da Educação de Oeiras (APEOC), desenvolvido com Next.js 15, TypeScript e tecnologias modernas.
 
-## ✨ Technology Stack
+## 🚀 Funcionalidades
 
-This scaffold provides a robust foundation built with:
+### 🔐 Autenticação
+- Sistema de login seguro com JWT
+- Criptografia de senhas com bcrypt
+- Proteção de rotas
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 👥 Gestão de Associados
+- **996 associados** cadastrados
+- Busca em tempo real
+- Filtros por categoria, estado, cargo
+- Ordenação por nome, matrícula, valor
+- Visualização em grid ou lista
+- Detalhes completos de cada associado
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### ⚖️ Gestão de Processos
+- Sistema completo de processos judiciais
+- Anotações por processo
+- Informações detalhadas (vara, situação, próximos passos)
+- Classificação por tipo de ação
+- Atualizações em tempo real
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+### 📊 Dashboard
+- Estatísticas gerais
+- Contadores por categoria
+- Aniversariantes do mês
+- Média de valores
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+## 🛠️ Tecnologias
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+- **Frontend**: Next.js 15, React, TypeScript
+- **UI**: Tailwind CSS, shadcn/ui, Lucide Icons
+- **Backend**: Next.js API Routes
+- **Database**: Prisma ORM com SQLite
+- **Auth**: JWT, bcrypt
+- **Estado**: React Hooks
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+## 📦 Instalação
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
-
-## 🚀 Quick Start
-
+1. Clone o repositório:
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
+git clone https://github.com/SEU-USUARIO/sistema-apeoc.git
+cd sistema-apeoc
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-## 🤖 Powered by Z.ai
+3. Configure o banco de dados:
+```bash
+npm run db:push
+```
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+4. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+5. Acesse em http://localhost:3000
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+## 🔑 Acesso Padrão
 
-## 📁 Project Structure
+- **Usuário**: `rocha`
+- **Senha**: `4884`
+
+## 📁 Estrutura do Projeto
 
 ```
 src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+├── app/
+│   ├── api/          # API Routes
+│   ├── components/   # Componentes React
+│   ├── hooks/        # Hooks personalizados
+│   └── lib/          # Utilitários
+├── data/             # Dados estáticos
+├── components/
+│   ├── ui/          # Componentes UI
+│   ├── auth/        # Componentes de autenticação
+│   └── layout/      # Componentes de layout
+└── lib/             # Bibliotecas compartilhadas
 ```
 
-## 🎨 Available Features & Components
+## 🎯 Principais Características
 
-This scaffold includes a comprehensive set of modern web development tools:
+- ✅ **Responsivo**: Funciona perfeitamente em desktop e mobile
+- ✅ **Seguro**: Autenticação JWT e criptografia de senhas
+- ✅ **Performático**: Otimizado com Next.js 15
+- ✅ **Escalável**: Arquitetura modular e organizada
+- ✅ **Acessível**: Interface intuitiva e fácil de usar
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+## 🔄 Funcionalidades Principais
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+### Associados
+- Busca instantânea por nome, matrícula ou cargo
+- Filtros por categoria (municipal/estadual)
+- Ordenação por múltiplos critérios
+- Visualização detalhada com informações completas
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+### Processos
+- Acompanhamento de processos judiciais
+- Sistema de anotações por processo
+- Classificação por tipo (INSS, Adicional, etc.)
+- Status e próximos passos
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+### Dashboard
+- Visão geral do sistema
+- Estatísticas em tempo real
+- Informações importantes destacadas
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+## 🧪 Testes
 
-## 🤝 Get Started with Z.ai
+Para testar o sistema:
+1. Acesse http://localhost:3000/teste
+2. Verifique se a API está funcionando
+3. Faça login com as credenciais padrão
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+## 📝 Desenvolvimento
+
+### Scripts Disponíveis
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build para produção
+- `npm run start` - Servidor de produção
+- `npm run lint` - Verificação de código
+- `npm run db:push` - Atualizar banco de dados
+
+### Variáveis de Ambiente
+Crie um arquivo `.env.local`:
+```env
+JWT_SECRET=seu-secret-key-aqui
+DATABASE_URL="file:./dev.db"
+```
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -am 'Adicionar nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob licença MIT.
+
+## 👥 Equipe
+
+Desenvolvido para a Associação dos Profissionais da Educação de Oeiras (APEOC).
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+**Sistema APEOC** © 2024 - Todos os direitos reservados.
