@@ -6,7 +6,7 @@ export interface Associado {
   estado?: string;
   cargo?: string;
   aniversario?: string;
-  categoria?: 'municipal' | 'estadual' | 'autoridade';
+  categoria?: 'municipal' | 'estadual';
 }
 
 export const associados: Associado[] = [
@@ -994,38 +994,7 @@ export const associados: Associado[] = [
   { matricula: "0021184", nome: "Walter Pereira da Silva", referencia: "25,001,3%", valor: "25,001,3%", estado: "estado" },
   { matricula: "0021185", nome: "Wilson de Oliveira Carvalho", referencia: "25,001,3%", valor: "25,001,3%", estado: "estado" },
   { matricula: "0021186", nome: "Willemberg Ferreira da Silva", referencia: "25,001,3%", valor: "25,001,3%", estado: "estado" },
-  
-  // VEREADORES (AS) E ACOMPANHANTE - AUTORIDADES
-  { matricula: "VER001", nome: "ANTONIO EMANOEL DE ALMEIDA SOUSA", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Presidente da Câmara de Vereadores" },
-  { matricula: "VER002", nome: "KLEBER TRÉVIA VERAS", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER003", nome: "MARCOS ANTONIO SILVA VERAS COELHO", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER004", nome: "ANA CAROLINA TOMAZ DE QUEIROZ VERAS", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereadora Municipal" },
-  { matricula: "VER005", nome: "MARIA IRACILDA RODRIGUES", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereadora Municipal" },
-  { matricula: "VER006", nome: "FRANCISCO GOMES DE ARAÚJO", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER007", nome: "ANTONIO CLEILE MARTINS DE OLIVEIRA JÚNIOR", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER008", nome: "JAMES BARBOSA DA ROCHA", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER009", nome: "JOSÉ JEOVÁ DE VASCONCELOS", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER010", nome: "VALDIVINO FÉLIX DA SILVA", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER011", nome: "RAIMUNDO NONATO DA COSTA", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER012", nome: "JULIANO ABREU CRUZ", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER013", nome: "FRANCISCA NEIRILANE ROQUES NASCIMENTO", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereadora Municipal" },
-  { matricula: "VER014", nome: "WESLEY SNIPES SOUSA LIMA", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  { matricula: "VER015", nome: "JOSÉ VALDIR OLIVEIRA NETO", referencia: "Convidado", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Vereador Municipal" },
-  
-  // CONVIDADAS DE HONRA E OUTRAS AUTORIDADES
-  { matricula: "AUT001", nome: "MARIA ELIZABETH MAGALHÃES", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Prefeita Municipal" },
-  { matricula: "AUT002", nome: "MARCIANA DE ARAÚJO ALMEIDA", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Secretária Municipal de Educação" },
-  { matricula: "AUT003", nome: "ANA CAROLINY LIMA GOMES", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Presidente da APAC" },
-  { matricula: "AUT004", nome: "LUSMAR SOUSA FONTENELE", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Paróquia Bom Jesus dos Navegantes" },
-  { matricula: "AUT005", nome: "MILTON CÉLIO DE VASCONCELOS FILHO", referencia: "Convidado de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Secretário Paroquial" },
-  { matricula: "AUT006", nome: "MARIA DO SOCORRO SILVA SOUSA", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Programadora Financeira da Prefeitura" },
-  { matricula: "AUT007", nome: "RICARDO FERRO OLIVEIRA", referencia: "Convidado de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Coordenador da 4ª CREDE" },
-  { matricula: "AUT008", nome: "FRANCISCO BARCELOS FONTENELE NETO", referencia: "Convidado de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Tesoureiro do Lions Club de Camocim" },
-  { matricula: "AUT009", nome: "JAMILLE QUESIA GOMES DE LIMA", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Presidente do SINSPCAM" },
-  { matricula: "AUT010", nome: "LENILDA COLARES MOREIRA", referencia: "Convidada de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Presidente do Lions Club de Camocim" },
-  { matricula: "AUT011", nome: "SANTIAGO PONTES FREIRE FIGUEIREDO", referencia: "Convidado de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Presidente da ACCAL" },
-  { matricula: "AUT012", nome: "GILSON SOARES CORDEIRO", referencia: "Convidado de Honra", valor: "Pulseira: Não", categoria: "autoridade", cargo: "Diretor Geral IFCE - Campus Camocim" }
-];
+  ];
 
 // Dados de aniversariantes de outubro e seus cargos
 const aniversariantesOutubro: { [key: string]: { cargo: string; dia: string } } = {

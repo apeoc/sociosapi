@@ -8,6 +8,7 @@ import { Search, Users, Filter, Grid, List } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Skeleton } from '@/components/ui/skeleton'
+import { SorteioModal } from '@/components/SorteioModal'
 
 interface Associado {
   matricula: string;
@@ -173,7 +174,7 @@ export default function Home() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-6">
-        {/* Estatísticas */}
+        {/* Estatísticas e Sorteio */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <Card>
             <CardContent className="p-4">
@@ -212,14 +213,10 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
             <CardContent className="p-4">
-              <div className="flex items-center gap-2">
-                <Search className="h-8 w-8 text-purple-600" />
-                <div>
-                  <p className="text-sm text-gray-600">Encontrados</p>
-                  <p className="text-2xl font-bold text-gray-900">{filteredAssociados.length}</p>
-                </div>
+              <div className="flex flex-col items-center justify-center h-full">
+                <SorteioModal associados={associados} filteredAssociados={filteredAssociados} />
               </div>
             </CardContent>
           </Card>
